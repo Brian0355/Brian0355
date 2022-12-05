@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Brian Saint Clair | portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal-plain.min.css">
+   
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/fonts.css" />
@@ -109,7 +108,7 @@
             <h3>Experience</h3>
             <hr />
             <div>
-                <a>
+                <a data-modal-id="myModal">
                     <img src="assets/img/experience/1.svg" />
                     <h4>Nintendo @ Enter The Studio</h4>
                 </a>
@@ -157,8 +156,18 @@
     <footer>
         <small>Developed and designed by Brian Saint Clair. ©️2022. All rights reserved.</small>
     </footer>
+    <div id="myModal" class="eins-modal">
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+      
+          Mi primer trabajo
+          
+          <button class="eins-modal-close-button">OK</button>
+        </div>
+      </div>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/fixed.js"></script>
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 
 </body>
 
